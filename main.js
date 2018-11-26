@@ -21,7 +21,7 @@ let line = 25;
 let lineColor = '#696969';
 
 function draw(e) {
-    console.log("touched")
+    console.log("touched");
     if(!isDrawing) return;
     if(rainbow) { 
         setRainbow()
