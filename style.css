@@ -1,0 +1,42 @@
+html, body {
+    margin: 0;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  
+
+  .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(184, 190, 184, 0.267);
+  }
+
+  .header > * {
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    
+  }
+
+  input {
+    cursor: pointer;
+    padding: 1px 1px;
+    border-radius: 3px;
+  }
+
+  #rainbowButton {
+    background: linear-gradient(65deg, rgb(255, 75, 75), rgb(255, 193, 79), rgb(255, 255, 121), rgb(91, 250, 91), rgb(54, 54, 255), rgb(106, 41, 153), rgb(226, 162, 226) );
+    border: none;
+    border-radius: 3px;
+    color: rgb(245, 245, 238);
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 1px 0px 1px rgb(29, 29, 29);
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
