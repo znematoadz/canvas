@@ -21,6 +21,7 @@ let line = 25;
 let lineColor = '#696969';
 
 function draw(e) {
+    console.log("touched")
     if(!isDrawing) return;
     if(rainbow) { 
         setRainbow()
@@ -70,6 +71,7 @@ canvas.addEventListener('mouseout', () => {
     });
 
     canvas.addEventListener('touchmove', (e) => {
+        console.log("pretouched")
         isDrawing = true;
         draw;
         [lastX, lastY] = [e.offsetX, e.offsetY];
