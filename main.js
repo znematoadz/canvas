@@ -21,7 +21,6 @@ let line = 25;
 let lineColor = '#696969';
 
 function draw(e) {
-    console.log("touched", e);
     if(!isDrawing) return;
     if(rainbow) { 
         setRainbow()
@@ -35,7 +34,7 @@ function draw(e) {
     ctx.moveTo(lastX, lastY);
     
     if(e.type === 'touchmove') {ctx.lineTo(e.touches[0].clientX, e.touches[0].clientY); 
-        [lastX, lastY] = [e.touches[0].clientX, e.touches[0].clientY];                                                  }
+        [lastX, lastY] = [e.touches[0].clientX, e.touches[0].clientY];                                             
     }
 
     // offset is the line drawn
