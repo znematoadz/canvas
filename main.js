@@ -78,7 +78,12 @@ canvas.addEventListener('mouseout', () => {
         [lastX, lastY] = [e.touches[0].clientX, e.touches[0].clientY];
     }, false);
     canvas.addEventListener('touchmove', draw, false);
-    
+    canvas.addEventListener('touchend', () => {
+        isDrawing = false;
+        }, false);
+    canvas.addEventListener('touchcancel', () => {
+        isDrawing = false;
+        }, false);
 
 colorSelect.addEventListener('change', setLineColor);
 brushWidth.addEventListener('change', (e) => {
