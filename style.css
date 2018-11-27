@@ -8,9 +8,11 @@ body {
 
 .header {
   display: flex;
+  position: absolute;
   justify-content: center;
   align-items: center;
   background-color: rgba(184, 190, 184, 0.267);
+  width: 100%;
 }
 
 .header > * {
