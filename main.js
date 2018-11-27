@@ -34,6 +34,10 @@ function draw(e) {
     // line begins here
     ctx.moveTo(lastX, lastY);
     
+    if(e.type === 'touchmove') {ctx.lineTo(e.touches[0].clientX, e.touches[0].clientY); 
+        [lastX, lastY] = [e.touches[0].clientX, e.touches[0].clientY];                                                  }
+    }
+
     // offset is the line drawn
     ctx.lineTo(e.offsetX, e.offsetY);
     ctx.stroke();
@@ -70,16 +74,11 @@ canvas.addEventListener('mouseout', () => {
     isDrawing = false;
     });
 
-    canvas.addEventListener('touchmove', (e) => {
-        console.log("pretouched")
+    canvas.addEventListener('touchstart', (e) => {
         isDrawing = true;
-        draw;
-        [lastX, lastY] = [e.offsetX, e.offsetY];
-    },false );
+        [lastX, lastY] = [e.touches[0].clientX, e.touches[0].clientY];
+    }, false);
     canvas.addEventListener('touchmove', draw, false);
-    canvas.addEventListener('touchend', () => {
-        isDrawing = false;
-        }, false);
     
 
 colorSelect.addEventListener('change', setLineColor);
