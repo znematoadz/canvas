@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Fun with Canvas</title>
-  <link href="style.css" rel="stylesheet" >
-</head>
-<body>
-  <div class="header"><label class="" for="lineColor">Brush Color:</label>
-    <input class="" id="lineColor" type="color" name="lineColor" value="#696969">
-  <label class="" for="lineWidth">Line Width:</label>
-    <input id="lineWidth" type="range" min="0" max="100" value="25" name="lineWidth">
-  <button id="rainbowButton" class="" type="button" onclick="setLineColor('setRainbow')">Rainbow!</button>
-</div>
-  
-  <canvas id="draw" width="800" height="800"></canvas>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fun with Canvas</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header">
+      <label class="" for="lineColor">Brush Color:</label>
+      <input
+        class=""
+        id="lineColor"
+        type="color"
+        name="lineColor"
+        value="#696969"
+      />
+      <label class="" for="lineWidth">Line Width:</label>
+      <input
+        id="lineWidth"
+        type="range"
+        min="0"
+        max="100"
+        value="25"
+        name="lineWidth"
+      />
+      <button
+        id="rainbowButton"
+        class=""
+        type="button"
+        onclick="setLineColor('setRainbow')"
+      >
+        Rainbow!
+      </button>
+    </div>
 
+    <canvas id="draw" width="800" height="800"></canvas>
 
-
-<script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
